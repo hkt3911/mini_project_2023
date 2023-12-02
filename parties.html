@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+   background-color: #2A3137; 
+}
+.mySlides {
+	display:none;
+	height:500px;
+	max-width:100%;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #ed1010;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  /* background-color: #04AA6D; */
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+* {
+  box-sizing: border-box;
+   box-sizing: content-box;
+}
+.row{
+background-color:#e6f2ff;
+width:80%;
+margin: 0 auto;
+}
+ .image {
+  width: 100%;
+  height: 180px;
+  margin-left:30px;
+  border: 5px solid #ddd;
+  border-radius: 50%;
+  padding:5px;
+  display: block;
+  border-style: outset;
+}
+.image:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.column {
+  float: left;
+  width: 23.33%;
+  padding:30px;
+  
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  margin-left:110px;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+	margin-left:-30px;
+  }
+}
+
+.about-section {
+  padding: 0px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.fa {
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+	  <a href="C:\Users\dellk\OneDrive\Desktop\mini_project_compress\mini_project\login.html" class="active">Home</a>
+	  <a href="#contact">Contact Us</a><p style="text-align: center; color: #e6f2ff; font-weight: 700; font-size: 20px;">Parties Nominated For Election</p>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	  </a>
+	</div>
+	<div style="padding-left:16px">
+	</div>
+
+	<div class="w3-content w3-section" >
+		<img class="mySlides" src="see.jpg" style="width:100%">
+		<img class="mySlides" src="pr.jpg" style="width:100%">
+		<img class="mySlides" src="gate.png" style="width:100%">
+	</div>
+	<div class="row">
+	  <div class="column" >
+		<img src="bjp2.jpg" alt="Snow" style="width:100%" class="image">
+		 <div class="overlay">The Bharatiya Janata Party (BJP) is a pro-Hindu political party of India. It was founded in December 1980 by Atal Bihari Vajpayee and L K Advani, who were former members of the Bharatiya Jana Sangh (founded in 1951). The BJP is currently the ruling party of India, with Narendra Modi as the prime minister and Amit Shah as the parliamentary board chairperson. The BJP advocates the rebuilding of India in accordance with Hindu culture.The official philosophy of the BJP is "Integral humanism," a philosophy first formulated by Deendayal Upadhyaya in 1965, who described it as advocating an "indigenous economic model that puts the human being at center stage.</div>
+	  </div>
+	  <div class="column">
+		<img src="congress.png" alt="Forest" style="width:100%" class="image">
+				 <div class="overlay">The Indian National Congress (INC), colloquially the Congress Party or simply the Congress, is a political party in India with widespread roots. Founded in 1885, it was the first modern nationalist movement to emerge in the British Empire in Asia and Africa.The Congress party emphasizes social equality, freedom, secularism, and equal opportunity.[13] Its political position is generally considered to be in the centre.[37] Historically, the party has represented farmers, labourers, and Mahatma Gandhi National Rural Employment Guarantee Act (MGNREGA).</div>
+	  </div>
+	  <div class="column">
+		<img src="bsp.jpg" alt="Mountains" style="width:100%" class="image">
+				 <div class="overlay">The Bahujan Samaj Party (BSP) is a national level political party in India that was formed to represent Bahujans, referring to Scheduled Castes, Scheduled Tribes, and Other Backward Classes (OBC), along with religious minorities. It was founded in 1984 by Kanshi Ram, a member of the Dalit community. The BSP states that it represents the people at the lowest levels of the Hindu social system—those officially designated as members of the Scheduled Castes, Scheduled Tribes, and Other Backward Classes—as well as other religious and social minorities</div>
+	  </div>
+	  <div class="column">
+		<img src="aap.jpg" alt="Snow" style="width:100%" class="image">
+				 <div class="overlay">The Aam Aadmi Party (transl.Common Man's Party) is a political party in India. It was founded in November 2012 by Arvind Kejriwal and his then-companions following the 2011 Indian anti-corruption movement.On 10 April 2023, AAP was officially granted the status of National party by ECI.The AAP's goal is to reverse the way that government accountability operates, and the party takes an interpretation of the Gandhian socialist concept of swaraj as a tenet. It believes that through swaraj, the government will be directly accountable to the people instead of higher officials.</div>
+	  </div>
+	  <div class="column">
+		<img src="spa1.jpeg" alt="Forest" style="width:100%" class="image">
+				 <div class="overlay">Samajwadi Party (SP), regional political party in India based in Uttar Pradesh state. The SP was formed in 1992 in Lucknow, and it professes a socialist ideology. Influenced by the veteran socialist leader Ram Manohar Lohia (1910-67), the party aimed at “creating a socialist society, which works on the principle of equality,” and sought to mobilize the state's minority Muslim population and members of lower castes (notably those officially classified as Other Backward Classes) into a political force. Mulayam Singh Yadav was the party's founder and longtime president. The SP grew to become one of the largest regional parties in India</div>
+	  </div>
+	  <div class="column">
+		<img src="trinmool.jpg" alt="Mountains" style="width:100%" class="image">
+				 <div class="overlay">The All India Trinamool Congress (TMC) is an Indian national political party. It is mostly active in West Bengal. The party was founded in January 1998 by Mamata Banerjee.The TMC has been recognised as a national party by the Election Commission of India.Ma Mati Manush (Bengali: মা মাটি মানুষ) was primarily a slogan, coined by Mamata Banerjee. The term is literally translated as "Mother, Motherland and People".</div>
+	  </div>
+	  <div class="column">
+		<img src="aimim.jpg" alt="Mountains" style="width:100%" class="image">
+				 <div class="overlay">AIMIM was originally founded as Majlis-e-Ittehadul Muslimeen (MIM) in 1927 by Nawab Mahmood Nawaz Khan Qiledar of Hyderabad State in the presence of Ulma-e-Mashaeqeen as a pro-Pakistan party. It is majorily works in Hyderabad and Telanagna. It also participates in State election of Uttar Pradesh & also in central But Failed to achieve any Height. </div>
+	  </div>
+	  <div class="column">
+		<img src="Janata.png" alt="Mountains" style="width:100%" class="image">
+				 <div class="overlay">Janata Dal was an Indian political party formed through the merger of Janata Party factions, the Lok Dal, Indian National Congress (Jagjivan), and the Jan Morcha. It was formed on 11 October 1988 under the leadership of V. P. Singh.He united the entire disparate spectrum of parties ranging from regional parties,the Janata Dal (Secular) is a regional political party in India with its mass base in the states of Karnataka and Kerala. Its political position is centre-left, operating on the ideology of Social Democratic Secularism. It not only talks and tends to give rights to minorities but for every citizen of Bharat.</div>
+	  </div>
+	</div>
+  <p style="color: #e6f2ff; background-color: #e6f2ff; text-align: right; font-weight: 600; font-style: italic; font-size: 20px;"><a href="types_of_election.html" target="_blank">Click Here To Appear In Next Page</a></p>
+	<div class="about-section">
+    <p style="text-align: left;">For any discrepency Feel free to Contact Us on<br> +(91)875xxxx634, abc@ecb.gov.in <br><center>OR</center><br>below handles too..
+	  <h3>Follow Us On</h3>
+	
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-linkedin"></a>
+		<a href="#" class="fa fa-youtube"></a>
+		<a href="#" class="fa fa-instagram"></a>
+    <br><p style="color: rgb(228, 201, 21); text-align: center; font-weight: 800;">Conducted By Election Commission Of BHARAT</p>
+	</div>
+  
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}    
+	  x[myIndex-1].style.display = "block";  
+	  setTimeout(carousel, 2000); 
+	}
+</script>
+
+</body>
+</html>

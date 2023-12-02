@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body{
+	margin:0;
+	background-image: url("gate.png");
+    letter-spacing:2px;
+    padding:px;
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+}
+
+#form{
+    color:white;
+    width:50%;
+    height:35px;
+    padding:11px;
+	font-size:25px;
+	box-shadow:15px 15px 25px black;
+	border:2px solid yellow;
+	background:orangered;
+    border-radius:0 100px 0 100px ;
+    animation:example 1s linear alternate; 
+}
+@keyframes example {
+100%{
+    transform:translate3d(0px,0px,0px0px,);
+  }
+ 0%{
+    transform:translate3d(210px,0px,0px);
+  }
+  
+}	
+.form-control{
+	width:50%;
+	border-bottom:15px;
+	border: solid yellow;
+	box-shadow:9px 9px 25px black;
+    margin-bottom:20px;
+    margin-left:10px;
+    border-radius: 30px 0 30px 0;
+    padding:5px 50px 5px 50px;
+}
+.form-control:focus{
+	border: solid red;
+	box-shadow:15px 15px 25px black;
+}
+#login{
+	background:white;
+	box-shadow:9px 9px 25px black;
+	text-decoration:none;
+	border:2px solid yellow;
+	padding:5px 25px 5px 25px;
+	font-size:15px;
+	color:black;
+    border-radius: 50px 0 50px 0;
+}
+#login:focus{
+	border:2px solid red;
+	box-shadow:9px 9px 25px black;
+	box-shadow:15px 15px 25px black;
+}
+#box{
+	background:white;
+	
+	border:5px solid yellow;
+	padding:55px;
+	background-color:#cce6ff;
+	box-shadow:9px 9px 25px black;
+    border-radius: 60px 0 60px 0;
+    width:25%;
+    animation:exam 1s linear alternate; 
+}
+
+@keyframes exam {
+100%{
+   transform:translate3d(0px,0px,0px)
+  }
+
+ 0%{
+ 
+ transform:translate3d(-210px,0px,0px)
+  }
+}
+
+label{box-shadow:9px 9px 25px black;
+	background:orangered;
+	color:white;
+	padding:10px 50px 10px 50px;
+	border-radius: 60px 0 60px 0;
+	width:100%;}
+	input[type=text], input[type=password]{
+	outline:none;
+}
+.fff{
+	background:white;
+	box-shadow:9px 9px 25px black;
+	text-decoration:none;
+	border:2px solid orangered;
+	padding:5px 25px 5px 25px;
+	font-size:15px;
+	color:black;
+    border-radius: 50px 0 50px 0;
+}
+.fff:focus{
+	border: solid red;
+	box-shadow:15px 15px 25px black;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+   background-color: #2A3137; 
+   background-image: url("gate.png");
+        }
+
+        .about-section {
+  padding: 0px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.fa {
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+  </style>
+  <body>
+<form name="myform">
+
+
+<center><p id="form"><i>Fill Required Details</i></P>
+<div id="box">
+	<label>Type Of Election:</label></br></br>
+		<select class="fff"  style="width:200px;" name="elect"150px; font-size: 20px;">
+            <option value="#"></option>
+            <option value="Lok Sabha">Lok Sabha</option>
+            <option value="Vidhan Sabha">Vidhan Sabha</option>
+        </select><br><br>
+	  
+	<label>Select state:</label></br> </br>
+		<select class="fff" ib="stateSelect" style="width:200px;" >
+			<option value=""></option>
+			<option value="Andhra Pradesh">Andhra Pradesh</option>
+			<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+			<option value="Assam">Assam</option>
+			<option value="Bihar">Bihar</option>
+			<option value="Chhattisgarh">Chhattisgarh</option>
+			<option value="Goa">Goa</option>
+			<option value="Gujarat">Gujarat</option>
+			<option value="Haryana">Haryana</option>
+			<option value="Himachal Pradesh">Himachal Pradesh</option>
+			<option value="Jharkhand">Jharkhand</option>
+			<option value="Karnataka">Karnataka</option>
+			<option value="Kerala">Kerala</option>
+			<option value="Madhya Pradesh">Madhya Pradesh</option>
+			<option value="Maharashtra">Maharashtra</option>
+			<option value="Manipur">Manipur</option>
+			<option value="Meghalaya">Meghalaya</option>
+			<option value="Mizoram">Mizoram</option>
+			<option value="Nagaland">Nagaland</option>
+			<option value="Odisha">Odisha</option>
+			<option value="Punjab">Punjab</option>
+			<option value="Rajasthan">Rajasthan</option>
+			<option value="Sikkim">Sikkim</option>
+			<option value="Tamil Nadu">Tamil Nadu</option>
+			<option value="Telangana">Telangana</option>
+			<option value="Tripura">Tripura</option>
+			<option value="Uttar Pradesh">Uttar Pradesh</option>
+			<option value="Uttarakhand">Uttarakhand</option>
+			<option value="West Bengal">West Bengal</option>
+			<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+			<option value="Chandigarh">Chandigarh</option>
+			<option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu
+			</option>
+			<option value="Delhi">Delhi</option>
+			<option value="Lakshadweep">Lakshadweep</option>
+			<option value="Puducherry">Puducherry</option>
+		</select><br></br>
+	<label>Enter valid Pincode:</label></br> </br>
+	<input type="Pincod" placeholder="Pincode" class="form-control" name="pincod"></br>
+	<a href="#" id="login" onclick="myfunction()">Reset</a>
+	<a href="select_party.html" target="_blank" id="login" onclick="myfunction()">Submit</a>
+	</center>
+</div>
+</form>
+<div class="about-section">
+	<p style="text-align: left;">For any discrepency Feel free to Contact Us on <br>+(91)875xxxx634, abc@ecb.gov.in <br><center>OR</center><br>below handles too..
+	  <h3>Follow Us On</h3>
+	
+		<a href="#" class="fa fa-facebook"></a>
+		<a href="#" class="fa fa-twitter"></a>
+		<a href="#" class="fa fa-google"></a>
+		<a href="#" class="fa fa-linkedin"></a>
+		<a href="#" class="fa fa-youtube"></a>
+		<a href="#" class="fa fa-instagram"></a>
+		<br><p style="color: rgb(228, 201, 21); text-align: center; font-weight: 800;">Conducted By Election Commission Of BHARAT</p>
+	</div>
+  
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+	x.className += " responsive";
+  } else {
+	x.className = "topnav";
+  }
+}
+var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}    
+	  x[myIndex-1].style.display = "block";  
+	  setTimeout(carousel, 2000); 
+	}
+</script>
+</body>
+<script>
+	
+			function myfunction(){
+				if(document.myform.user.value=="")	{
+				alert("enter usernsme");
+				document.myform.user.focus();
+          return false;
+				}
+				if(document.myform.pass.value=="")	{
+				alert("enter password");
+				document.myform.pass.focus();
+          return false;
+				}
+        else{
+          alert("logged in");  return true;
+        }
+      }
+</script>
+</html>
